@@ -82,12 +82,10 @@ plot(t, ec);
 efm = ac*cos(2*3.14*fc*t + beta*sin(2*3.14*fm*t));
 subplot(3,1,3);
 plot(t, efm);
-
 ```
 
 
 Output Waveform
-
 <img width="1552" height="972" alt="Screenshot 2026-03-26 133047" src="https://github.com/user-attachments/assets/7420207b-dfa0-4e89-8744-71cc7b69111d" />
 
 Tabulation
