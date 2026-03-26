@@ -2,7 +2,7 @@
 
 EXP NO: 4	GENERATION AND DETECTION OF FM
 
-
+  
 AIM:
 To write a program for Frequency Modulation and Demodulation using SCILAB and to observe and measure the frequency deviation and the modulation index of FM.
 
@@ -64,26 +64,45 @@ MODEL GRAPH:
 <img width="512" height="365" alt="image" src="https://github.com/user-attachments/assets/acd787bd-5281-4f1b-802f-1aa39fac9189" />
 
 
-Program
+Program 
+```
+am = 5.1;
+fm = 410;
+ac = 10.2;
+fc = 4100;
+fs = 41000;
+beta = 4.4;
+t = 0:1/fs:3/fm;
+em = am*cos(2*3.14*fm*t);
+subplot(3,1,1);
+plot(t, em);
+ec = ac*cos(2*3.14*fc*t);
+subplot(3,1,2);
+plot(t, ec);
+efm = ac*cos(2*3.14*fc*t + beta*sin(2*3.14*fm*t));
+subplot(3,1,3);
+plot(t, efm);
+
+```
+
 
 
 Output Waveform
 
 
 
-Tabulation
+<img width="1552" height="972" alt="Screenshot 2026-03-26 133047" src="https://github.com/user-attachments/assets/6556684b-c664-434c-bb10-ac17ddc9e8fc" />
+
+Tabulation 
+
+
+![WhatsApp Image 2026-03-26 at 1 25 15 PM](https://github.com/user-attachments/assets/2095a221-d897-4c3c-b327-4db6d8ab9eab)
 
 
 
 Calculation
+![WhatsApp Image 2026-03-26 at 6 21 38 PM](https://github.com/user-attachments/assets/bc234bda-bb5f-42ed-98a1-2cb51dd13cad)
 
-
-
-Frequency Deviation Practical = 
-
-Modulation Index Practical	= 
-
-Modulation Index Theoretical	=
 
 
 
